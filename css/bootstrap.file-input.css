@@ -1,0 +1,18 @@
+
+
+
+.file-input label {
+    padding: 4px 12px;
+    margin-bottom: 0px;
+}
+.file-input a {
+    padding: 0px;
+}
+/*file upload*/
+.file-input input[type=file] {
+    opacity: 0; filter: alpha(opacity=0);
+    z-index: 99999999;
+}
+.file-input .name {
+    margin-left: 8px;
+}
