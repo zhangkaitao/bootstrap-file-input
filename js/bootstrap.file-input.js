@@ -1,10 +1,12 @@
 /**
  * 利用label辅助点击file框
  * 可完美解决在ie中的“访问限制”问题（即必须是用户点击才能进行文件上传）
+ * 仅对class为custom-file-input应用
  */
-$(function() {
-    $('input[type=file]').each(function(i,elem){
+$.customFileInput = function() {
+    $('input[type=file].custom-file-input').each(function(i,elem){
         var $input = $(this);
+
         if(!$input.prop("id")) {
             $input.prop("id", "file_" + i);
         }
@@ -24,4 +26,7 @@ $(function() {
         });
 
     });
+};
+$(function() {
+    $.customFileInput();
 });
