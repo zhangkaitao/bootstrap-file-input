@@ -8,8 +8,9 @@
 .file-input a {
     padding: 0px;
 }
+
 /*file upload*/
-.file-input input[type=file] {
+.file-input input[type="file"] {
     opacity: 0; filter: alpha(opacity=0);
     z-index: 99999999;
 }
