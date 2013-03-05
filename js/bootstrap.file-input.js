@@ -29,4 +29,13 @@ $.customFileInput = function() {
 };
 $(function() {
     $.customFileInput();
+    //修正firefox label不能触发输入框点击
+    if(navigator.userAgent.indexOf("Firefox") > 0) {
+        $(document).on('click', 'label', function(e) {
+            if(e.currentTarget === this && e.target.nodeName !== 'INPUT') {
+                $(this.control).click();
+            }
+        });
+    }
+
 });
