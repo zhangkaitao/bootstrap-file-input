@@ -19,8 +19,8 @@
 其他参考：
 ===== 
 1、http://gregpike.net/demos/bootstrap-file-input/demo.html  
-确点：ie8（其他版本未测试）下，可能在使用过程中input位置有偏差  
+缺点：ie8（其他版本未测试）下，可能在使用过程中input位置有偏差  
 2、http://addyosmani.github.com/jquery-ui-bootstrap/extra.html#file-input  
-这个是jquery-ui-bootstrap的参考示例，确点也是ie的限制  
+这个是jquery-ui-bootstrap的参考示例，缺点也是ie的限制  
 
 所以大家可以根据我的思路改写这两个。  
